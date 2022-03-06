@@ -7,6 +7,12 @@ target 'BasicMVVMCoordinatorApp' do
 
   # Pods for BasicMVVMCoordinatorApp
 
+pod 'lottie-ios', '~> 3.1.6'
+pod 'RxSwift', '~> 5.1.1'
+pod 'RxCocoa', '~> 5.1.1'
+pod 'Kingfisher', '~> 5.13'
+pod 'SwiftLint', '~> 0.39.2'
+
   target 'BasicMVVMCoordinatorAppTests' do
     inherit! :search_paths
     # Pods for testing
