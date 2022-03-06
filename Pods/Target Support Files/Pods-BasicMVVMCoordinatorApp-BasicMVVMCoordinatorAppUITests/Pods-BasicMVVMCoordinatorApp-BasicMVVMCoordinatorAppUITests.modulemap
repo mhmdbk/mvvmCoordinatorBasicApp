@@ -1,0 +1,6 @@
+framework module Pods_BasicMVVMCoordinatorApp_BasicMVVMCoordinatorAppUITests {
+  umbrella header "Pods-BasicMVVMCoordinatorApp-BasicMVVMCoordinatorAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
