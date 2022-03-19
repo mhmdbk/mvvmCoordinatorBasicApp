@@ -12,6 +12,10 @@ pod 'RxSwift', '~> 5.1.1'
 pod 'RxCocoa', '~> 5.1.1'
 pod 'Kingfisher', '~> 5.13'
 pod 'SwiftLint', '~> 0.39.2'
+pod 'FBSDKCoreKit'
+pod 'Kingfisher'
+pod 'GoogleSignIn'
+pod 'FBSDKLoginKit'
 
   target 'BasicMVVMCoordinatorAppTests' do
     inherit! :search_paths

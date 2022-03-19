@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="BasicMVVMCoordinatorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgd-aS-9Eb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_background" translatesAutoresizingMaskIntoConstraints="NO" id="oCC-up-74R">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i8L-J6-HWM">
+                                        <rect key="frame" x="57" y="344" width="300" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UV-dK-jzl">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="36.5"/>
+                                                <color key="backgroundColor" red="0.29330688710000002" green="0.35142719750000001" blue="0.56080710889999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Continue with facebook"/>
+                                                <connections>
+                                                    <action selector="onFacebookTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="maS-LE-uvx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AY2-F2-0rM">
+                                                <rect key="frame" x="0.0" y="46.5" width="300" height="37"/>
+                                                <color key="backgroundColor" red="0.32424128060000001" green="0.51321768759999997" blue="0.93337625270000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Continue with Google"/>
+                                                <connections>
+                                                    <action selector="onGoogleTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uIW-C0-leT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiZ-HX-9Ke">
+                                                <rect key="frame" x="0.0" y="93.5" width="300" height="36.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Continue with Apple"/>
+                                                <connections>
+                                                    <action selector="onAppleTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KFd-Qc-nIo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="ZbH-HI-r7i"/>
+                                            <constraint firstAttribute="width" constant="300" id="zxR-4a-mgn"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-icon" translatesAutoresizingMaskIntoConstraints="NO" id="LJv-H3-cS7">
+                                        <rect key="frame" x="87" y="352.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="QYs-SU-gzR"/>
+                                            <constraint firstAttribute="height" constant="20" id="dHD-qf-RVT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google-icon" translatesAutoresizingMaskIntoConstraints="NO" id="JAc-9x-HUB">
+                                        <rect key="frame" x="87" y="399" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="rbM-LG-kZA"/>
+                                            <constraint firstAttribute="height" constant="20" id="vhg-BJ-0SU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zni-th-kL4">
+                                        <rect key="frame" x="87" y="445.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="E68-Et-DCr"/>
+                                            <constraint firstAttribute="width" constant="20" id="beq-K6-Em3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JAc-9x-HUB" firstAttribute="centerY" secondItem="AY2-F2-0rM" secondAttribute="centerY" id="0vU-3z-6ZV"/>
+                                    <constraint firstItem="i8L-J6-HWM" firstAttribute="centerX" secondItem="fgd-aS-9Eb" secondAttribute="centerX" id="BHb-Gh-FxG"/>
+                                    <constraint firstAttribute="bottom" secondItem="oCC-up-74R" secondAttribute="bottom" id="ETj-fr-iSP"/>
+                                    <constraint firstItem="JAc-9x-HUB" firstAttribute="leading" secondItem="AY2-F2-0rM" secondAttribute="leading" constant="30" id="Kuk-iT-9tk"/>
+                                    <constraint firstAttribute="trailing" secondItem="oCC-up-74R" secondAttribute="trailing" id="RNR-Os-me9"/>
+                                    <constraint firstItem="oCC-up-74R" firstAttribute="top" secondItem="fgd-aS-9Eb" secondAttribute="top" id="TSe-EK-J6g"/>
+                                    <constraint firstItem="oCC-up-74R" firstAttribute="leading" secondItem="fgd-aS-9Eb" secondAttribute="leading" id="Tpe-i7-2rB"/>
+                                    <constraint firstItem="LJv-H3-cS7" firstAttribute="leading" secondItem="4UV-dK-jzl" secondAttribute="leading" constant="30" id="fdj-w3-q7v"/>
+                                    <constraint firstItem="i8L-J6-HWM" firstAttribute="centerY" secondItem="fgd-aS-9Eb" secondAttribute="centerY" id="fwv-CX-SKk"/>
+                                    <constraint firstItem="Zni-th-kL4" firstAttribute="centerY" secondItem="GiZ-HX-9Ke" secondAttribute="centerY" id="jIc-nU-lCC"/>
+                                    <constraint firstItem="Zni-th-kL4" firstAttribute="leading" secondItem="GiZ-HX-9Ke" secondAttribute="leading" constant="30" id="kkE-Tc-GnL"/>
+                                    <constraint firstItem="LJv-H3-cS7" firstAttribute="centerY" secondItem="4UV-dK-jzl" secondAttribute="centerY" id="zRc-pn-A9C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fgd-aS-9Eb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6ni-AK-o34"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fgd-aS-9Eb" secondAttribute="bottom" id="DM6-HC-UHR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fgd-aS-9Eb" secondAttribute="trailing" id="RAW-ow-0kj"/>
+                            <constraint firstItem="fgd-aS-9Eb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="plj-ht-Efy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="60.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple-icon" width="22.5" height="28"/>
+        <image name="facebook-icon" width="25.5" height="25.5"/>
+        <image name="google-icon" width="30" height="30"/>
+        <image name="register_background" width="375" height="811"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
