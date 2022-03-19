@@ -2,6 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>BasicMVVMCoordinatorApp</string>
+				<string>fb485513979847761</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.844342130364-h6av0h8kll58n6ibhpj4c0rah7bvkc7q</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>485513979847761</string>
+	<key>FacebookClientToken</key>
+	<string>1ba64f178205cad2ebf27077f5493ef3</string>
+	<key>FacebookDisplayName</key>
+	<string>BasicMVVMCoordinatorApp</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,26 +50,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>BasicMVVMCoordinatorApp</string>
-				<string>fb485513979847761</string>
-			</array>
-		</dict>
-	</array>
-	<key>FacebookAppID</key>
-	<string>485513979847761</string>
-	<key>FacebookClientToken</key>
-	<string>1ba64f178205cad2ebf27077f5493ef3</string>
-	<key>FacebookDisplayName</key>
-	<string>BasicMVVMCoordinatorApp</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbapi</string>
-		<string>fb-messenger-share-api</string>
-	</array>
 </dict>
 </plist>
