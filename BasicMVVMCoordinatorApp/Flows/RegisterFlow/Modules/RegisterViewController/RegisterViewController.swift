@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import GoogleSignIn
+import AuthenticationServices
 
 class RegisterViewController: UIViewController, StoryboardLoadable, Presentable {
 
@@ -66,8 +68,73 @@ extension RegisterViewController {
             self?.login(name, "", user.profileId, user.token)
         }
     }
+
     @IBAction func onGoogleTapped(_ sender: Any) {
+        let signInConfig = GoogleSignInService.configureGID()
+        GIDSignIn.sharedInstance.signIn(
+           with: signInConfig,
+           presenting: self
+       ) { user, error in
+           guard error == nil else { return }
+           guard let user = user else { return }
+
+            if let error = error {
+                #if DEBUG
+                print("\(error.localizedDescription)")
+                #endif
+                return
+            }
+            let familyName = user.profile?.familyName ?? ""
+            let givenName = user.profile?.givenName ?? "" + " " + familyName
+            guard let token = user.authentication.idToken else { return } // Safe to send to the server
+            guard let email = user.profile?.email else { return }
+            guard let id = user.userID else { return }
+            self.login(givenName, email, id, token)
+        }
     }
+
     @IBAction func onAppleTapped(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            let request = ASAuthorizationAppleIDProvider().createRequest()
+            request.requestedScopes = [.fullName, .email]
+            let controller = ASAuthorizationController(authorizationRequests: [request])
+
+            controller.delegate = self
+            controller.presentationContextProvider = self
+            controller.performRequests()
+        } else {
+//            self.showSnackBar(text: viewModel.updateiOSAlertText)
+        }
+    }
+}
+
+// MARK: ASAuthorizationControllerDelegate
+@available(iOS 13.0, *)
+extension RegisterViewController: ASAuthorizationControllerDelegate {
+    func authorizationController(controller: ASAuthorizationController,
+                                 didCompleteWithAuthorization authorization: ASAuthorization) {
+        switch authorization.credential {
+        case let appleIDCredential as ASAuthorizationAppleIDCredential:
+            let userIdentifier = appleIDCredential.user
+            var givenName = ""
+            var familyName = ""
+            let email = appleIDCredential.email ?? ""
+            if let name = appleIDCredential.fullName {
+                givenName = name.givenName ?? ""
+                familyName = name.familyName ?? ""
+            }
+
+            let name = givenName + " " + familyName
+            login(name, email, userIdentifier, "")
+        default:
+            break
+        }
+    }
+}
+
+@available(iOS 13.0, *)
+extension RegisterViewController: ASAuthorizationControllerPresentationContextProviding {
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+           return self.view.window!
     }
 }

@@ -40,6 +40,9 @@
 		F6C7172727FED4700081ECFC /* ApplicationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7172627FED4700081ECFC /* ApplicationStorage.swift */; };
 		F6C7172927FED5970081ECFC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7172827FED5970081ECFC /* UserManager.swift */; };
 		F6C7172B27FED62C0081ECFC /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7172A27FED62C0081ECFC /* LoginResponse.swift */; };
+		F6C0F4CA27E63C08002D84E9 /* FacebookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4C927E63C08002D84E9 /* FacebookService.swift */; };
+		F6C0F4CF27E63C39002D84E9 /* GoogleSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4CE27E63C39002D84E9 /* GoogleSignInService.swift */; };
+		F6C0F4D127E63C69002D84E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4D027E63C69002D84E9 /* Constants.swift */; };
 		F6D8611027E5D2DA00B30F25 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8610F27E5D2DA00B30F25 /* HomeCoordinator.swift */; };
 		F6D8611227E5D2E300B30F25 /* HomeCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8611127E5D2E300B30F25 /* HomeCoordinatorOutput.swift */; };
 		F6D8611727E5D4BA00B30F25 /* HomeModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8611627E5D4BA00B30F25 /* HomeModuleFactory.swift */; };
@@ -136,6 +139,10 @@
 		F6C7172627FED4700081ECFC /* ApplicationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStorage.swift; sourceTree = "<group>"; };
 		F6C7172827FED5970081ECFC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		F6C7172A27FED62C0081ECFC /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F6C0F4C927E63C08002D84E9 /* FacebookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookService.swift; sourceTree = "<group>"; };
+		F6C0F4CE27E63C39002D84E9 /* GoogleSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInService.swift; sourceTree = "<group>"; };
+		F6C0F4D027E63C69002D84E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F6C0F4D627E64DF6002D84E9 /* BasicMVVMCoordinatorApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicMVVMCoordinatorApp.entitlements; sourceTree = "<group>"; };
 		F6D8610F27E5D2DA00B30F25 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		F6D8611127E5D2E300B30F25 /* HomeCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorOutput.swift; sourceTree = "<group>"; };
 		F6D8611627E5D4BA00B30F25 /* HomeModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleFactory.swift; sourceTree = "<group>"; };
@@ -249,6 +256,7 @@
 		F602BEE027D4B16400DCEF1B /* BasicMVVMCoordinatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				F6C0F4D627E64DF6002D84E9 /* BasicMVVMCoordinatorApp.entitlements */,
 				F602BF5127D4C2F200DCEF1B /* Dependencies */,
 				F602BF2C27D4BE7200DCEF1B /* Protocols */,
 				F602BF1327D4BB7900DCEF1B /* Application */,
@@ -298,6 +306,7 @@
 		F602BF1227D4BB7200DCEF1B /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				F6C0F4D027E63C69002D84E9 /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -336,8 +345,9 @@
 		F602BF1627D4BB8C00DCEF1B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F602BF5427D4C33400DCEF1B /* NetworkService.swift */,
-				F602BF5827D4C59900DCEF1B /* BasicNetworkService.swift */,
+				F6C0F4CD27E63C28002D84E9 /* GoogleSignInService */,
+				F6C0F4CC27E63C19002D84E9 /* NetworkService */,
+				F6C0F4CB27E63C10002D84E9 /* FacebookService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -443,6 +453,29 @@
 				F6C7172827FED5970081ECFC /* UserManager.swift */,
 			);
 			path = Storage;
+		F6C0F4CB27E63C10002D84E9 /* FacebookService */ = {
+			isa = PBXGroup;
+			children = (
+				F6C0F4C927E63C08002D84E9 /* FacebookService.swift */,
+			);
+			path = FacebookService;
+			sourceTree = "<group>";
+		};
+		F6C0F4CC27E63C19002D84E9 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				F602BF5427D4C33400DCEF1B /* NetworkService.swift */,
+				F602BF5827D4C59900DCEF1B /* BasicNetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		F6C0F4CD27E63C28002D84E9 /* GoogleSignInService */ = {
+			isa = PBXGroup;
+			children = (
+				F6C0F4CE27E63C39002D84E9 /* GoogleSignInService.swift */,
+			);
+			path = GoogleSignInService;
 			sourceTree = "<group>";
 		};
 		F6D8610E27E5D2B900B30F25 /* HomeFlow */ = {
@@ -840,13 +873,16 @@
 				F602BF5927D4C59900DCEF1B /* BasicNetworkService.swift in Sources */,
 				F602BF2227D4BE1300DCEF1B /* Coordinator.swift in Sources */,
 				F6F3BF5C27D622AE00ED06B9 /* RegisterViewController.swift in Sources */,
+				F6C0F4CA27E63C08002D84E9 /* FacebookService.swift in Sources */,
 				F6F3BF8227D64AAB00ED06B9 /* FacebookLoginResponse.swift in Sources */,
 				F6D8611727E5D4BA00B30F25 /* HomeModuleFactory.swift in Sources */,
 				F6F3BF5027D6223600ED06B9 /* RegisterModuleFactoryType.swift in Sources */,
 				F602BF5727D4C44E00DCEF1B /* DependencyProvider.swift in Sources */,
+				F6C0F4D127E63C69002D84E9 /* Constants.swift in Sources */,
 				F6F3BF6D27D63D3900ED06B9 /* Fonts.swift in Sources */,
 				F602BF2127D4BE1300DCEF1B /* CoordinatorType.swift in Sources */,
 				F6F3BF5A27D6229400ED06B9 /* RegisterViewModel.swift in Sources */,
+				F6C0F4CF27E63C39002D84E9 /* GoogleSignInService.swift in Sources */,
 				F6F3BF5427D6223F00ED06B9 /* RegisterCoordinatorOutput.swift in Sources */,
 				F6D8611227E5D2E300B30F25 /* HomeCoordinatorOutput.swift in Sources */,
 				F602BEE427D4B16400DCEF1B /* SceneDelegate.swift in Sources */,
@@ -1030,6 +1066,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BasicMVVMCoordinatorApp/BasicMVVMCoordinatorApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1058,6 +1095,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BasicMVVMCoordinatorApp/BasicMVVMCoordinatorApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_OPTIMIZATION_LEVEL = 0;
