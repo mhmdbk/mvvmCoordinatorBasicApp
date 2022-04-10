@@ -31,24 +31,25 @@ extension RegisterViewController {
                _ email: String,
                _ profileId: String,
                _ token: String) {
-//        LoaderHUD.showHUD(in: self)
-//        viewModel.login(profileId, token, socialType, email, name) { [weak self] success, isUserFound, error in
-//            guard let self = self else { return }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-//                LoaderHUD.hideHUD(in: self)
-//                guard success else {
-//                    self.showAlert(withTitle: self.viewModel.alertTitle,
-//                                   message: error?.localizedDescription)
-//                    return
-//                }
-//                guard isUserFound else {
-//                    self.onRegister?(profileId, email, name, socialType)
-//                    return
-//                }
-//                self.viewModel.addLoginEvent(socialType)
-                self.onGoToHomeScreen?(name)
-//            }
-//        }
+        //        LoaderHUD.showHUD(in: self)
+        //        viewModel.login(profileId, token, socialType, email, name) { [weak self] success, isUserFound, error in
+        //            guard let self = self else { return }
+        //            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+        //                LoaderHUD.hideHUD(in: self)
+        //                guard success else {
+        //                    self.showAlert(withTitle: self.viewModel.alertTitle,
+        //                                   message: error?.localizedDescription)
+        //                    return
+        //                }
+        //                guard isUserFound else {
+        //                    self.onRegister?(profileId, email, name, socialType)
+        //                    return
+        //                }
+        //                self.viewModel.addLoginEvent(socialType)
+        ApplicationStorage.currentUserObject = LoginResponse(id: "\(profileId)", name: name, email: email, deviceToken: token)
+        self.onGoToHomeScreen?(name)
+        //            }
+        //        }
     }
 }
 // MARK: - IBActions

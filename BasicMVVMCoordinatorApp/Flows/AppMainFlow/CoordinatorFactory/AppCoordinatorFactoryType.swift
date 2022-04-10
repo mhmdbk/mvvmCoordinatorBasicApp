@@ -1,9 +1,8 @@
 //
 //  AppCoordinatorFactoryType.swift
-//  Foodak
+//  BasicMVVMCoordinatorApp
 //
-//  Created by Mounir Bittar on 4/16/20.
-//  Copyright © 2020 Ideatolife. All rights reserved.
+//  Created by MohammadBarek on 2022-03-07.
 //
 
 protocol AppCoordinatorFactoryType {
@@ -11,4 +10,7 @@ protocol AppCoordinatorFactoryType {
                                  dependencies: RegisterCoordinator.Dependencies,
                                  startingPoint: RegisterStartingPoint)
     -> Coordinator & RegisterCoordinator
+    func makeHomeCoordinator(router: RouterType,
+                                     dependencies: HomeCoordinator.Dependencies)
+            -> Coordinator & HomeCoordinator
 }

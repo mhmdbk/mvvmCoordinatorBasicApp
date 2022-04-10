@@ -1,9 +1,8 @@
 //
 //  RegisterCoordinatorOutput.swift
-//  Foodak
+//  BasicMVVMCoordinatorApp
 //
-//  Created by Batoul Issa on 1/19/21.
-//  Copyright © 2021 Ideatolife. All rights reserved.
+//  Created by MohammadBarek on 2022-03-07.
 //
 
 protocol RegisterCoordinatorOutput: AnyObject {

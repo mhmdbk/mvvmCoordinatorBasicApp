@@ -1,11 +1,6 @@
-//
 //  RegisterModuleFactory.swift
-//  Foodak
-//
-//  Created by Batoul Issa on 1/19/21.
-//  Copyright © 2021 Ideatolife. All rights reserved.
-//
-
+//  BasicMVVMCoordinatorApp
+//  Created by MohammadBarek on 2022-03-07.
 
 class RegisterModuleFactory: RegisterModuleFactoryType {
     func makeLoginModule(dependencies: LoginViewModel.Dependencies) -> LoginViewController {
