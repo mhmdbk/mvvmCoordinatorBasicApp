@@ -28,12 +28,8 @@ final class AppCoordinator: BaseCoordinator {
         super.init(router: router)
     }
 
-    private var isLoggedInUser: Bool {
-        return UserManager.isLoggedIn
-    }
-
     override func start() {
-        isLoggedInUser ? runHomeFlow(ApplicationStorage.kUserName) : showMainModule()
+        showMainModule()
     }
 }
 
@@ -45,14 +41,6 @@ private extension AppCoordinator {
             self?.runLoginRegisterFlow(startPoint: registeringStartingPoint)
         }
         router.setRootModule(mainViewController, hideBar: false)
-    }
-
-    func runHomeFlow(_ username: String) {
-        let homeCoordinator = coordinatorFactory.makeHomeCoordinator(router: router,
-                                                                     dependencies: dependencyProvider)
-        homeCoordinator.username = username
-        addChildCoordinator(homeCoordinator)
-        homeCoordinator.start()
     }
 
     func runLoginRegisterFlow(startPoint: RegisterStartingPoint) {

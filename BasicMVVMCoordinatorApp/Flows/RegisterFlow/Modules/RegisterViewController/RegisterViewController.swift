@@ -46,7 +46,6 @@ extension RegisterViewController {
 //                    return
 //                }
 //                self.viewModel.addLoginEvent(socialType)
-        ApplicationStorage.currentUserObject = LoginResponse(id: "\(profileId)", name: name, email: email, deviceToken: token)
                 self.onGoToHomeScreen?(name)
 //            }
 //        }

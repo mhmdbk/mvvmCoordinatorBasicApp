@@ -11,8 +11,4 @@ protocol AppCoordinatorFactoryType {
                                  dependencies: RegisterCoordinator.Dependencies,
                                  startingPoint: RegisterStartingPoint)
     -> Coordinator & RegisterCoordinator
-
-    func makeHomeCoordinator(router: RouterType,
-                             dependencies: HomeCoordinator.Dependencies)
-    -> Coordinator & HomeCoordinator
 }

@@ -7,15 +7,6 @@
 //
 
 class AppCoordinatorFactory: AppCoordinatorFactoryType {
-    func makeHomeCoordinator(router: RouterType,
-                             dependencies: HomeCoordinator.Dependencies)
-    -> Coordinator & HomeCoordinator {
-        let homeModuleFactory = HomeModuleFactory()
-        return HomeCoordinator(router: router,
-                               dependencies: dependencies,
-                               moduleFactory: homeModuleFactory)
-    }
-
     func makeRegisterCoordinator(router: RouterType,
                                  dependencies: RegisterCoordinator.Dependencies,
                                  startingPoint: RegisterStartingPoint)
