@@ -28,9 +28,13 @@ final class AppCoordinator: BaseCoordinator {
         super.init(router: router)
     }
 
-    override func start() {
-        showMainModule()
-    }
+    private var isLoggedInUser: Bool {
+         return UserManager.isLoggedIn
+     }
+
+     override func start() {
+         isLoggedInUser ? runHomeFlow(ApplicationStorage.kUserName) : showMainModule()
+     }
 }
 
 // MARK: - Private helper methods
@@ -57,4 +61,12 @@ private extension AppCoordinator {
         addChildCoordinator(registerCoordinator)
         registerCoordinator.start()
     }
+
+    func runHomeFlow(_ username: String) {
+              let homeCoordinator = coordinatorFactory.makeHomeCoordinator(router: router,
+                                                                           dependencies: dependencyProvider)
+              homeCoordinator.username = username
+              addChildCoordinator(homeCoordinator)
+              homeCoordinator.start()
+          }
 }
