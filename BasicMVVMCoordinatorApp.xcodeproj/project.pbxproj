@@ -36,6 +36,10 @@
 		F602BF5927D4C59900DCEF1B /* BasicNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602BF5827D4C59900DCEF1B /* BasicNetworkService.swift */; };
 		F602BF5D27D4CB0D00DCEF1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F602BF5C27D4CB0D00DCEF1B /* MainViewController.swift */; };
 		F602BF5F27D4CB1A00DCEF1B /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F602BF5E27D4CB1A00DCEF1B /* MainViewController.storyboard */; };
+		F6C7172527FED4250081ECFC /* ObjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7172427FED4250081ECFC /* ObjectStorage.swift */; };
+		F6C7172727FED4700081ECFC /* ApplicationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7172627FED4700081ECFC /* ApplicationStorage.swift */; };
+		F6C7172927FED5970081ECFC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7172827FED5970081ECFC /* UserManager.swift */; };
+		F6C7172B27FED62C0081ECFC /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7172A27FED62C0081ECFC /* LoginResponse.swift */; };
 		F6C0F4CA27E63C08002D84E9 /* FacebookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4C927E63C08002D84E9 /* FacebookService.swift */; };
 		F6C0F4CF27E63C39002D84E9 /* GoogleSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4CE27E63C39002D84E9 /* GoogleSignInService.swift */; };
 		F6C0F4D127E63C69002D84E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4D027E63C69002D84E9 /* Constants.swift */; };
@@ -131,6 +135,10 @@
 		F602BF5827D4C59900DCEF1B /* BasicNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicNetworkService.swift; sourceTree = "<group>"; };
 		F602BF5C27D4CB0D00DCEF1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F602BF5E27D4CB1A00DCEF1B /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		F6C7172427FED4250081ECFC /* ObjectStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStorage.swift; sourceTree = "<group>"; };
+		F6C7172627FED4700081ECFC /* ApplicationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStorage.swift; sourceTree = "<group>"; };
+		F6C7172827FED5970081ECFC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		F6C7172A27FED62C0081ECFC /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		F6C0F4C927E63C08002D84E9 /* FacebookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookService.swift; sourceTree = "<group>"; };
 		F6C0F4CE27E63C39002D84E9 /* GoogleSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInService.swift; sourceTree = "<group>"; };
 		F6C0F4D027E63C69002D84E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -290,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F3BF8127D64AAB00ED06B9 /* FacebookLoginResponse.swift */,
+				F6C7172A27FED62C0081ECFC /* LoginResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +314,7 @@
 		F602BF1327D4BB7900DCEF1B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F6C7172327FED4160081ECFC /* Storage */,
 				F6F3BF6A27D63CF300ED06B9 /* CustomNavigationController.swift */,
 				F602BEE127D4B16400DCEF1B /* AppDelegate.swift */,
 				F602BEE327D4B16400DCEF1B /* SceneDelegate.swift */,
@@ -435,6 +445,14 @@
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
+		F6C7172327FED4160081ECFC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7172427FED4250081ECFC /* ObjectStorage.swift */,
+				F6C7172627FED4700081ECFC /* ApplicationStorage.swift */,
+				F6C7172827FED5970081ECFC /* UserManager.swift */,
+			);
+			path = Storage;
 		F6C0F4CB27E63C10002D84E9 /* FacebookService */ = {
 			isa = PBXGroup;
 			children = (
@@ -822,7 +840,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C7172727FED4700081ECFC /* ApplicationStorage.swift in Sources */,
 				F6F3BF6927D628DB00ED06B9 /* AppCoordinatorFactoryType.swift in Sources */,
+				F6C7172B27FED62C0081ECFC /* LoginResponse.swift in Sources */,
 				F6F3BF6227D622F800ED06B9 /* LoginViewController.swift in Sources */,
 				F602BF5027D4C1E000DCEF1B /* MainViewModel.swift in Sources */,
 				F6D8611F27E5D55B00B30F25 /* HomeViewModel.swift in Sources */,
@@ -839,6 +859,7 @@
 				F6D8611927E5D4C400B30F25 /* HomeModuleFactoryType.swift in Sources */,
 				F602BF2827D4BE3800DCEF1B /* BaseCoordinator.swift in Sources */,
 				F6D8611027E5D2DA00B30F25 /* HomeCoordinator.swift in Sources */,
+				F6C7172927FED5970081ECFC /* UserManager.swift in Sources */,
 				F602BF2927D4BE3800DCEF1B /* Router.swift in Sources */,
 				F6F3BF6027D622E400ED06B9 /* LoginViewModel.swift in Sources */,
 				F602BEE227D4B16400DCEF1B /* AppDelegate.swift in Sources */,
@@ -865,6 +886,7 @@
 				F6F3BF5427D6223F00ED06B9 /* RegisterCoordinatorOutput.swift in Sources */,
 				F6D8611227E5D2E300B30F25 /* HomeCoordinatorOutput.swift in Sources */,
 				F602BEE427D4B16400DCEF1B /* SceneDelegate.swift in Sources */,
+				F6C7172527FED4250081ECFC /* ObjectStorage.swift in Sources */,
 				F602BF2527D4BE1300DCEF1B /* RouterType.swift in Sources */,
 				F602BF2327D4BE1300DCEF1B /* Presentable.swift in Sources */,
 			);
