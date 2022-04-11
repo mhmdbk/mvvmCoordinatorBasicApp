@@ -48,8 +48,8 @@ class RegisterCoordinator: BaseCoordinator, RegisterCoordinatorOutput {
 private extension RegisterCoordinator {
     func showRegisterScene() {
         let registerViewController = moduleFactory.makeRegisterModule(dependencies: dependencies)
-        registerViewController.onGoToHomeScreen = { [weak self] name in
-            self?.runHomeFlow(name)
+        registerViewController.onGoToMainScreen = { [weak self]  in
+            self?.runTabBarFlow()
         }
         router.push(registerViewController, animated: true, completion: nil)
     }
@@ -58,11 +58,13 @@ private extension RegisterCoordinator {
         router.push(loginViewController, animated: true, completion: nil)
     }
 
-    func runHomeFlow(_ username: String) {
-        let homeCoordinator = coordinatorFactory.makeHomeCoordinator(router: router,
-                                                                     dependencies: dependencies)
-        homeCoordinator.username = username
-        addChildCoordinator(homeCoordinator)
-        homeCoordinator.start()
+    func runTabBarFlow() {
+        let tabBarCoordinator = coordinatorFactory.makeTabBarCoordinator(router: router, dependencies: dependencies)
+        tabBarCoordinator.finishFlow = { [weak self] in
+            guard let self = self else { return }
+            self.removeChildCoordinator(tabBarCoordinator)
+        }
+        addChildCoordinator(tabBarCoordinator)
+        tabBarCoordinator.start()
     }
 }

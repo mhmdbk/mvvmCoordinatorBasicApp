@@ -52,6 +52,35 @@
 		F6D8611F27E5D55B00B30F25 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8611E27E5D55B00B30F25 /* HomeViewModel.swift */; };
 		F6D8612227E5DA6100B30F25 /* RegisterCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8612127E5DA6100B30F25 /* RegisterCoordinatorFactory.swift */; };
 		F6D8612427E5DA6C00B30F25 /* RegisterCoordinatorFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8612327E5DA6C00B30F25 /* RegisterCoordinatorFactoryType.swift */; };
+		F6F1C3F82804406B00A7B5AC /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C3F72804406B00A7B5AC /* TabBarCoordinator.swift */; };
+		F6F1C3FA2804407200A7B5AC /* TabBarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C3F92804407200A7B5AC /* TabBarCoordinatorOutput.swift */; };
+		F6F1C3FD280440FE00A7B5AC /* TabBarCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C3FC280440FE00A7B5AC /* TabBarCoordinatorFactory.swift */; };
+		F6F1C3FF2804410200A7B5AC /* TabBarCoordinatorFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C3FE2804410200A7B5AC /* TabBarCoordinatorFactoryType.swift */; };
+		F6F1C4012804414D00A7B5AC /* TabBarModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4002804414D00A7B5AC /* TabBarModuleFactory.swift */; };
+		F6F1C4032804415100A7B5AC /* TabBarModuleFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4022804415100A7B5AC /* TabBarModuleFactoryType.swift */; };
+		F6F1C4052804482600A7B5AC /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4042804482600A7B5AC /* String+Localized.swift */; };
+		F6F1C4092804494300A7B5AC /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4082804494300A7B5AC /* Language.swift */; };
+		F6F1C40F280466B200A7B5AC /* HomeCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C40E280466B200A7B5AC /* HomeCoordinatorFactory.swift */; };
+		F6F1C411280466B600A7B5AC /* HomeCoordinatorFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C410280466B600A7B5AC /* HomeCoordinatorFactoryType.swift */; };
+		F6F1C4172804701F00A7B5AC /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4162804701F00A7B5AC /* ProfileCoordinator.swift */; };
+		F6F1C4192804702400A7B5AC /* ProfileCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4182804702400A7B5AC /* ProfileCoordinatorOutput.swift */; };
+		F6F1C41B2804703700A7B5AC /* ProfileCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C41A2804703700A7B5AC /* ProfileCoordinatorFactory.swift */; };
+		F6F1C41D2804703C00A7B5AC /* ProfileCoordinatorFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C41C2804703C00A7B5AC /* ProfileCoordinatorFactoryType.swift */; };
+		F6F1C41F2804704900A7B5AC /* ProfileModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C41E2804704900A7B5AC /* ProfileModuleFactory.swift */; };
+		F6F1C4212804704C00A7B5AC /* ProfileModuleFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4202804704C00A7B5AC /* ProfileModuleFactoryType.swift */; };
+		F6F1C4232804705400A7B5AC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4222804705400A7B5AC /* ProfileViewModel.swift */; };
+		F6F1C4252804705C00A7B5AC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4242804705C00A7B5AC /* ProfileViewController.swift */; };
+		F6F1C4272804706300A7B5AC /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F1C4262804706300A7B5AC /* ProfileViewController.storyboard */; };
+		F6F1C429280473CC00A7B5AC /* ArticleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C428280473CC00A7B5AC /* ArticleCoordinator.swift */; };
+		F6F1C42B280473D300A7B5AC /* ArticleCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C42A280473D300A7B5AC /* ArticleCoordinatorOutput.swift */; };
+		F6F1C430280473F900A7B5AC /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C42F280473F900A7B5AC /* ArticleViewModel.swift */; };
+		F6F1C4322804740400A7B5AC /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4312804740400A7B5AC /* ArticleViewController.swift */; };
+		F6F1C4342804740900A7B5AC /* ArticleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F1C4332804740900A7B5AC /* ArticleViewController.storyboard */; };
+		F6F1C4362804748A00A7B5AC /* ArticleModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4352804748A00A7B5AC /* ArticleModuleFactory.swift */; };
+		F6F1C4382804748E00A7B5AC /* ArticleModuleFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C4372804748E00A7B5AC /* ArticleModuleFactoryType.swift */; };
+		F6F1C43A280474FF00A7B5AC /* ArticleCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C439280474FF00A7B5AC /* ArticleCoordinatorFactory.swift */; };
+		F6F1C43C2804752200A7B5AC /* ArticleCoordinatorFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C43B2804752200A7B5AC /* ArticleCoordinatorFactoryType.swift */; };
+		F6F1C43E2804B65E00A7B5AC /* UITabBarController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1C43D2804B65E00A7B5AC /* UITabBarController + Extensions.swift */; };
 		F6F3BF4F27D6223600ED06B9 /* RegisterModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3BF4D27D6223600ED06B9 /* RegisterModuleFactory.swift */; };
 		F6F3BF5027D6223600ED06B9 /* RegisterModuleFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3BF4E27D6223600ED06B9 /* RegisterModuleFactoryType.swift */; };
 		F6F3BF5327D6223F00ED06B9 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3BF5127D6223F00ED06B9 /* RegisterCoordinator.swift */; };
@@ -152,6 +181,35 @@
 		F6D8611E27E5D55B00B30F25 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F6D8612127E5DA6100B30F25 /* RegisterCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinatorFactory.swift; sourceTree = "<group>"; };
 		F6D8612327E5DA6C00B30F25 /* RegisterCoordinatorFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinatorFactoryType.swift; sourceTree = "<group>"; };
+		F6F1C3F72804406B00A7B5AC /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		F6F1C3F92804407200A7B5AC /* TabBarCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorOutput.swift; sourceTree = "<group>"; };
+		F6F1C3FC280440FE00A7B5AC /* TabBarCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorFactory.swift; sourceTree = "<group>"; };
+		F6F1C3FE2804410200A7B5AC /* TabBarCoordinatorFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorFactoryType.swift; sourceTree = "<group>"; };
+		F6F1C4002804414D00A7B5AC /* TabBarModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleFactory.swift; sourceTree = "<group>"; };
+		F6F1C4022804415100A7B5AC /* TabBarModuleFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleFactoryType.swift; sourceTree = "<group>"; };
+		F6F1C4042804482600A7B5AC /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		F6F1C4082804494300A7B5AC /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		F6F1C40E280466B200A7B5AC /* HomeCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorFactory.swift; sourceTree = "<group>"; };
+		F6F1C410280466B600A7B5AC /* HomeCoordinatorFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorFactoryType.swift; sourceTree = "<group>"; };
+		F6F1C4162804701F00A7B5AC /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		F6F1C4182804702400A7B5AC /* ProfileCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorOutput.swift; sourceTree = "<group>"; };
+		F6F1C41A2804703700A7B5AC /* ProfileCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorFactory.swift; sourceTree = "<group>"; };
+		F6F1C41C2804703C00A7B5AC /* ProfileCoordinatorFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorFactoryType.swift; sourceTree = "<group>"; };
+		F6F1C41E2804704900A7B5AC /* ProfileModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleFactory.swift; sourceTree = "<group>"; };
+		F6F1C4202804704C00A7B5AC /* ProfileModuleFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleFactoryType.swift; sourceTree = "<group>"; };
+		F6F1C4222804705400A7B5AC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F6F1C4242804705C00A7B5AC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F6F1C4262804706300A7B5AC /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		F6F1C428280473CC00A7B5AC /* ArticleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCoordinator.swift; sourceTree = "<group>"; };
+		F6F1C42A280473D300A7B5AC /* ArticleCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCoordinatorOutput.swift; sourceTree = "<group>"; };
+		F6F1C42F280473F900A7B5AC /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		F6F1C4312804740400A7B5AC /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		F6F1C4332804740900A7B5AC /* ArticleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleViewController.storyboard; sourceTree = "<group>"; };
+		F6F1C4352804748A00A7B5AC /* ArticleModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModuleFactory.swift; sourceTree = "<group>"; };
+		F6F1C4372804748E00A7B5AC /* ArticleModuleFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModuleFactoryType.swift; sourceTree = "<group>"; };
+		F6F1C439280474FF00A7B5AC /* ArticleCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCoordinatorFactory.swift; sourceTree = "<group>"; };
+		F6F1C43B2804752200A7B5AC /* ArticleCoordinatorFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCoordinatorFactoryType.swift; sourceTree = "<group>"; };
+		F6F1C43D2804B65E00A7B5AC /* UITabBarController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController + Extensions.swift"; sourceTree = "<group>"; };
 		F6F3BF4D27D6223600ED06B9 /* RegisterModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModuleFactory.swift; sourceTree = "<group>"; };
 		F6F3BF4E27D6223600ED06B9 /* RegisterModuleFactoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModuleFactoryType.swift; sourceTree = "<group>"; };
 		F6F3BF5127D6223F00ED06B9 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
@@ -258,12 +316,11 @@
 			children = (
 				F6C0F4D627E64DF6002D84E9 /* BasicMVVMCoordinatorApp.entitlements */,
 				F602BF5127D4C2F200DCEF1B /* Dependencies */,
+				F602BF1627D4BB8C00DCEF1B /* Services */,
 				F602BF2C27D4BE7200DCEF1B /* Protocols */,
 				F602BF1327D4BB7900DCEF1B /* Application */,
 				F602BF1727D4BB9000DCEF1B /* Coordinators */,
 				F602BF1927D4BBA200DCEF1B /* Flows */,
-				F602BF1627D4BB8C00DCEF1B /* Services */,
-				F602BF1827D4BB9700DCEF1B /* Networking */,
 				F602BF1527D4BB8500DCEF1B /* Utilities */,
 				F602BF1127D4BB6A00DCEF1B /* Models */,
 				F602BF1227D4BB7200DCEF1B /* Constants */,
@@ -345,6 +402,7 @@
 		F602BF1627D4BB8C00DCEF1B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F6F1C4072804493C00A7B5AC /* LanguageManager */,
 				F6C0F4CD27E63C28002D84E9 /* GoogleSignInService */,
 				F6C0F4CC27E63C19002D84E9 /* NetworkService */,
 				F6C0F4CB27E63C10002D84E9 /* FacebookService */,
@@ -362,20 +420,14 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		F602BF1827D4BB9700DCEF1B /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		F602BF1927D4BBA200DCEF1B /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				F6F1C40C2804667F00A7B5AC /* ArticlesFlow */,
+				F6F1C40B2804667800A7B5AC /* ProfileFlow */,
+				F6F1C3F428043DA100A7B5AC /* TabBarFlow */,
 				F6D8610E27E5D2B900B30F25 /* HomeFlow */,
 				F6F3BF4C27D6222900ED06B9 /* RegisterFlow */,
-				F6F3BF5127D6223F00ED06B9 /* RegisterCoordinator.swift */,
-				F6F3BF5227D6223F00ED06B9 /* RegisterCoordinatorOutput.swift */,
 				F602BF4A27D4C1B200DCEF1B /* MainFlow */,
 				F602BF2F27D4BF8B00DCEF1B /* AppMainFlow */,
 			);
@@ -387,6 +439,8 @@
 			children = (
 				F6F3BF7F27D6473700ED06B9 /* UIApplication + getTopController.swift */,
 				F6F3BF8327D64C1B00ED06B9 /* Dictionary + Extensions.swift */,
+				F6F1C4042804482600A7B5AC /* String+Localized.swift */,
+				F6F1C43D2804B65E00A7B5AC /* UITabBarController + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -483,6 +537,7 @@
 		F6D8610E27E5D2B900B30F25 /* HomeFlow */ = {
 			isa = PBXGroup;
 			children = (
+				F6F1C40D280466A700A7B5AC /* CoordinatorFactory */,
 				F6D8611427E5D46C00B30F25 /* Modules */,
 				F6D8611327E5D46500B30F25 /* ModuleFactory */,
 				F6D8610F27E5D2DA00B30F25 /* HomeCoordinator.swift */,
@@ -519,9 +574,145 @@
 			path = CoordinatorFactory;
 			sourceTree = "<group>";
 		};
+		F6F1C3F428043DA100A7B5AC /* TabBarFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C3FB280440A600A7B5AC /* CoordinatorFactory */,
+				F6F1C3F628043DF500A7B5AC /* ModuleFactory */,
+				F6F1C3F528043DEA00A7B5AC /* Modules */,
+				F6F1C3F72804406B00A7B5AC /* TabBarCoordinator.swift */,
+				F6F1C3F92804407200A7B5AC /* TabBarCoordinatorOutput.swift */,
+			);
+			path = TabBarFlow;
+			sourceTree = "<group>";
+		};
+		F6F1C3F528043DEA00A7B5AC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F6F1C3F628043DF500A7B5AC /* ModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C4002804414D00A7B5AC /* TabBarModuleFactory.swift */,
+				F6F1C4022804415100A7B5AC /* TabBarModuleFactoryType.swift */,
+			);
+			path = ModuleFactory;
+			sourceTree = "<group>";
+		};
+		F6F1C3FB280440A600A7B5AC /* CoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C3FC280440FE00A7B5AC /* TabBarCoordinatorFactory.swift */,
+				F6F1C3FE2804410200A7B5AC /* TabBarCoordinatorFactoryType.swift */,
+			);
+			path = CoordinatorFactory;
+			sourceTree = "<group>";
+		};
+		F6F1C4072804493C00A7B5AC /* LanguageManager */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C4082804494300A7B5AC /* Language.swift */,
+			);
+			path = LanguageManager;
+			sourceTree = "<group>";
+		};
+		F6F1C40B2804667800A7B5AC /* ProfileFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C4142804701000A7B5AC /* Modules */,
+				F6F1C4132804700700A7B5AC /* ModuleFactory */,
+				F6F1C41228046FEF00A7B5AC /* CoordinatorFactory */,
+				F6F1C4162804701F00A7B5AC /* ProfileCoordinator.swift */,
+				F6F1C4182804702400A7B5AC /* ProfileCoordinatorOutput.swift */,
+			);
+			path = ProfileFlow;
+			sourceTree = "<group>";
+		};
+		F6F1C40C2804667F00A7B5AC /* ArticlesFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C42E280473E600A7B5AC /* CoordinatorFactory */,
+				F6F1C42D280473DF00A7B5AC /* ModuleFactory */,
+				F6F1C42C280473D800A7B5AC /* Modules */,
+				F6F1C428280473CC00A7B5AC /* ArticleCoordinator.swift */,
+				F6F1C42A280473D300A7B5AC /* ArticleCoordinatorOutput.swift */,
+			);
+			path = ArticlesFlow;
+			sourceTree = "<group>";
+		};
+		F6F1C40D280466A700A7B5AC /* CoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C40E280466B200A7B5AC /* HomeCoordinatorFactory.swift */,
+				F6F1C410280466B600A7B5AC /* HomeCoordinatorFactoryType.swift */,
+			);
+			path = CoordinatorFactory;
+			sourceTree = "<group>";
+		};
+		F6F1C41228046FEF00A7B5AC /* CoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C41A2804703700A7B5AC /* ProfileCoordinatorFactory.swift */,
+				F6F1C41C2804703C00A7B5AC /* ProfileCoordinatorFactoryType.swift */,
+			);
+			path = CoordinatorFactory;
+			sourceTree = "<group>";
+		};
+		F6F1C4132804700700A7B5AC /* ModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C41E2804704900A7B5AC /* ProfileModuleFactory.swift */,
+				F6F1C4202804704C00A7B5AC /* ProfileModuleFactoryType.swift */,
+			);
+			path = ModuleFactory;
+			sourceTree = "<group>";
+		};
+		F6F1C4142804701000A7B5AC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C4222804705400A7B5AC /* ProfileViewModel.swift */,
+				F6F1C4242804705C00A7B5AC /* ProfileViewController.swift */,
+				F6F1C4262804706300A7B5AC /* ProfileViewController.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F6F1C42C280473D800A7B5AC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C42F280473F900A7B5AC /* ArticleViewModel.swift */,
+				F6F1C4312804740400A7B5AC /* ArticleViewController.swift */,
+				F6F1C4332804740900A7B5AC /* ArticleViewController.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F6F1C42D280473DF00A7B5AC /* ModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C4352804748A00A7B5AC /* ArticleModuleFactory.swift */,
+				F6F1C4372804748E00A7B5AC /* ArticleModuleFactoryType.swift */,
+			);
+			path = ModuleFactory;
+			sourceTree = "<group>";
+		};
+		F6F1C42E280473E600A7B5AC /* CoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1C439280474FF00A7B5AC /* ArticleCoordinatorFactory.swift */,
+				F6F1C43B2804752200A7B5AC /* ArticleCoordinatorFactoryType.swift */,
+			);
+			path = CoordinatorFactory;
+			sourceTree = "<group>";
+		};
 		F6F3BF4C27D6222900ED06B9 /* RegisterFlow */ = {
 			isa = PBXGroup;
 			children = (
+				F6F3BF5127D6223F00ED06B9 /* RegisterCoordinator.swift */,
+				F6F3BF5227D6223F00ED06B9 /* RegisterCoordinatorOutput.swift */,
 				F6F3BF5727D6227F00ED06B9 /* Modules */,
 				F6D8612027E5DA4F00B30F25 /* CoordinatorFactory */,
 				F6F3BF5527D6225000ED06B9 /* ModuleFactory */,
@@ -710,10 +901,12 @@
 				F6F3BF6427D6232000ED06B9 /* LoginViewController.storyboard in Resources */,
 				F602BEEB27D4B16500DCEF1B /* Assets.xcassets in Resources */,
 				F6F3BF7A27D63D5500ED06B9 /* Poppins-ExtraBold.ttf in Resources */,
+				F6F1C4342804740900A7B5AC /* ArticleViewController.storyboard in Resources */,
 				F6F3BF7C27D63D5500ED06B9 /* Poppins-Bold.ttf in Resources */,
 				F6F3BF7927D63D5500ED06B9 /* Poppins-Medium.ttf in Resources */,
 				F6F3BF7B27D63D5500ED06B9 /* Poppins-Regular.ttf in Resources */,
 				F602BEE927D4B16400DCEF1B /* Main.storyboard in Resources */,
+				F6F1C4272804706300A7B5AC /* ProfileViewController.storyboard in Resources */,
 				F6F3BF7727D63D5500ED06B9 /* Poppins-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -843,8 +1036,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F3BF6927D628DB00ED06B9 /* AppCoordinatorFactoryType.swift in Sources */,
+				F6F1C3FD280440FE00A7B5AC /* TabBarCoordinatorFactory.swift in Sources */,
 				F6F3BF6227D622F800ED06B9 /* LoginViewController.swift in Sources */,
 				F602BF5027D4C1E000DCEF1B /* MainViewModel.swift in Sources */,
+				F6F1C41F2804704900A7B5AC /* ProfileModuleFactory.swift in Sources */,
 				F6D8611F27E5D55B00B30F25 /* HomeViewModel.swift in Sources */,
 				F6F3BF8027D6473700ED06B9 /* UIApplication + getTopController.swift in Sources */,
 				F6D8612227E5DA6100B30F25 /* RegisterCoordinatorFactory.swift in Sources */,
@@ -852,45 +1047,70 @@
 				F6F3BF8427D64C1B00ED06B9 /* Dictionary + Extensions.swift in Sources */,
 				F602BF5D27D4CB0D00DCEF1B /* MainViewController.swift in Sources */,
 				F602BF3B27D4BFE800DCEF1B /* AppModuleFactory.swift in Sources */,
+				F6F1C43A280474FF00A7B5AC /* ArticleCoordinatorFactory.swift in Sources */,
 				F6F3BF6B27D63CF300ED06B9 /* CustomNavigationController.swift in Sources */,
 				F602BF3127D4BFA100DCEF1B /* AppCoordinator.swift in Sources */,
 				F6F3BF4F27D6223600ED06B9 /* RegisterModuleFactory.swift in Sources */,
+				F6F1C4362804748A00A7B5AC /* ArticleModuleFactory.swift in Sources */,
 				F6D8611D27E5D55400B30F25 /* HomeViewController.swift in Sources */,
+				F6F1C4192804702400A7B5AC /* ProfileCoordinatorOutput.swift in Sources */,
 				F6D8611927E5D4C400B30F25 /* HomeModuleFactoryType.swift in Sources */,
+				F6F1C4232804705400A7B5AC /* ProfileViewModel.swift in Sources */,
+				F6F1C4012804414D00A7B5AC /* TabBarModuleFactory.swift in Sources */,
 				F602BF2827D4BE3800DCEF1B /* BaseCoordinator.swift in Sources */,
+				F6F1C4052804482600A7B5AC /* String+Localized.swift in Sources */,
 				F6D8611027E5D2DA00B30F25 /* HomeCoordinator.swift in Sources */,
 				F602BF2927D4BE3800DCEF1B /* Router.swift in Sources */,
 				F6F3BF6027D622E400ED06B9 /* LoginViewModel.swift in Sources */,
 				F602BEE227D4B16400DCEF1B /* AppDelegate.swift in Sources */,
 				F6F3BF6827D628DB00ED06B9 /* AppCoordinatorFactory.swift in Sources */,
+				F6F1C4092804494300A7B5AC /* Language.swift in Sources */,
 				F602BF5327D4C2FE00DCEF1B /* HasNetworkService.swift in Sources */,
 				F6D8612427E5DA6C00B30F25 /* RegisterCoordinatorFactoryType.swift in Sources */,
 				F602BF3A27D4BFE800DCEF1B /* AppModuleFactoryType.swift in Sources */,
+				F6F1C4172804701F00A7B5AC /* ProfileCoordinator.swift in Sources */,
 				F602BF2427D4BE1300DCEF1B /* StoryboardLoadable.swift in Sources */,
+				F6F1C430280473F900A7B5AC /* ArticleViewModel.swift in Sources */,
 				F602BF5527D4C33400DCEF1B /* NetworkService.swift in Sources */,
+				F6F1C3FF2804410200A7B5AC /* TabBarCoordinatorFactoryType.swift in Sources */,
 				F6082DB52802EBFC00F7C737 /* ObjectStorage.swift in Sources */,
+				F6F1C4252804705C00A7B5AC /* ProfileViewController.swift in Sources */,
 				F6F3BF5327D6223F00ED06B9 /* RegisterCoordinator.swift in Sources */,
+				F6F1C3F82804406B00A7B5AC /* TabBarCoordinator.swift in Sources */,
+				F6F1C411280466B600A7B5AC /* HomeCoordinatorFactoryType.swift in Sources */,
 				F602BF5927D4C59900DCEF1B /* BasicNetworkService.swift in Sources */,
+				F6F1C3FA2804407200A7B5AC /* TabBarCoordinatorOutput.swift in Sources */,
+				F6F1C4382804748E00A7B5AC /* ArticleModuleFactoryType.swift in Sources */,
 				F6082DB42802EBFC00F7C737 /* ApplicationStorage.swift in Sources */,
+				F6F1C429280473CC00A7B5AC /* ArticleCoordinator.swift in Sources */,
 				F602BF2227D4BE1300DCEF1B /* Coordinator.swift in Sources */,
 				F6F3BF5C27D622AE00ED06B9 /* RegisterViewController.swift in Sources */,
 				F6082DB32802EBFC00F7C737 /* UserManager.swift in Sources */,
 				F6C0F4CA27E63C08002D84E9 /* FacebookService.swift in Sources */,
 				F6082DB72802EC0F00F7C737 /* LoginResponse.swift in Sources */,
+				F6F1C43E2804B65E00A7B5AC /* UITabBarController + Extensions.swift in Sources */,
 				F6F3BF8227D64AAB00ED06B9 /* FacebookLoginResponse.swift in Sources */,
 				F6D8611727E5D4BA00B30F25 /* HomeModuleFactory.swift in Sources */,
+				F6F1C4032804415100A7B5AC /* TabBarModuleFactoryType.swift in Sources */,
 				F6F3BF5027D6223600ED06B9 /* RegisterModuleFactoryType.swift in Sources */,
+				F6F1C40F280466B200A7B5AC /* HomeCoordinatorFactory.swift in Sources */,
 				F602BF5727D4C44E00DCEF1B /* DependencyProvider.swift in Sources */,
 				F6C0F4D127E63C69002D84E9 /* Constants.swift in Sources */,
 				F6F3BF6D27D63D3900ED06B9 /* Fonts.swift in Sources */,
+				F6F1C4322804740400A7B5AC /* ArticleViewController.swift in Sources */,
 				F602BF2127D4BE1300DCEF1B /* CoordinatorType.swift in Sources */,
 				F6F3BF5A27D6229400ED06B9 /* RegisterViewModel.swift in Sources */,
+				F6F1C43C2804752200A7B5AC /* ArticleCoordinatorFactoryType.swift in Sources */,
 				F6C0F4CF27E63C39002D84E9 /* GoogleSignInService.swift in Sources */,
+				F6F1C4212804704C00A7B5AC /* ProfileModuleFactoryType.swift in Sources */,
 				F6F3BF5427D6223F00ED06B9 /* RegisterCoordinatorOutput.swift in Sources */,
+				F6F1C41B2804703700A7B5AC /* ProfileCoordinatorFactory.swift in Sources */,
 				F6D8611227E5D2E300B30F25 /* HomeCoordinatorOutput.swift in Sources */,
+				F6F1C41D2804703C00A7B5AC /* ProfileCoordinatorFactoryType.swift in Sources */,
 				F602BEE427D4B16400DCEF1B /* SceneDelegate.swift in Sources */,
 				F602BF2527D4BE1300DCEF1B /* RouterType.swift in Sources */,
 				F602BF2327D4BE1300DCEF1B /* Presentable.swift in Sources */,
+				F6F1C42B280473D300A7B5AC /* ArticleCoordinatorOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

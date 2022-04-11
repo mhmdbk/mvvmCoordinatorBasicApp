@@ -12,8 +12,19 @@ class RegisterCoordinatorFactory: RegisterCoordinatorFactoryType {
                              dependencies: HomeCoordinator.Dependencies)
     -> Coordinator & HomeCoordinator {
         let homeModuleFactory = HomeModuleFactory()
+        let homeCoordinatorFactory = HomeCoordinatorFactory()
         return HomeCoordinator(router: router,
                                dependencies: dependencies,
-                               moduleFactory: homeModuleFactory)
+                               moduleFactory: homeModuleFactory,
+                               coordinatorFactory: homeCoordinatorFactory)
+    }
+
+    func makeTabBarCoordinator(router: RouterType, dependencies: TabBarCoordinator.Dependencies) -> Coordinator & TabBarCoordinator {
+        let tabBarModuleFactory = TabBarModuleFactory()
+        let tabBarCoordinatorFactory = TabBarCoordinatorFactory()
+        return TabBarCoordinator(router: router,
+                                 dependencies: dependencies,
+                                 moduleFactory: tabBarModuleFactory,
+                                 coordinatorFactory: tabBarCoordinatorFactory)
     }
 }
