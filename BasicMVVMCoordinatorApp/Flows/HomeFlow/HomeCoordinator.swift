@@ -11,20 +11,21 @@ class HomeCoordinator: BaseCoordinator, HomeCoordinatorOutput {
 
     private let dependencies: Dependencies
     private let moduleFactory: HomeModuleFactoryType
-    var username: String = ""
+    private let coordinatorFactory: HomeCoordinatorFactoryType
     var finishFlow: (() -> Void)?
 
     private lazy var homeViewController: HomeViewController = {
         let homeViewController = moduleFactory.makeHomeModule(dependencies: dependencies)
-        homeViewController.username = username
         return homeViewController
     }()
 
     init(router: RouterType,
          dependencies: Dependencies,
-         moduleFactory: HomeModuleFactoryType) {
+         moduleFactory: HomeModuleFactoryType,
+         coordinatorFactory: HomeCoordinatorFactoryType) {
         self.dependencies = dependencies
         self.moduleFactory = moduleFactory
+        self.coordinatorFactory = coordinatorFactory
         super.init(router: router)
     }
 

@@ -13,4 +13,7 @@ protocol AppCoordinatorFactoryType {
     func makeHomeCoordinator(router: RouterType,
                                      dependencies: HomeCoordinator.Dependencies)
             -> Coordinator & HomeCoordinator
+    func makeTabBarCoordinator(router: RouterType,
+                             dependencies: TabBarCoordinator.Dependencies)
+        -> Coordinator & TabBarCoordinator
 }

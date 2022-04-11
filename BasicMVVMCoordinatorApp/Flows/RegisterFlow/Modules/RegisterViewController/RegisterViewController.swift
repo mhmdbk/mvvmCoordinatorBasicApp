@@ -12,7 +12,7 @@ import AuthenticationServices
 class RegisterViewController: UIViewController, StoryboardLoadable, Presentable {
 
     var viewModel: RegisterViewModel!
-    var onGoToHomeScreen: ((String) -> Void)?
+    var onGoToMainScreen: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ extension RegisterViewController {
         //                }
         //                self.viewModel.addLoginEvent(socialType)
         ApplicationStorage.currentUserObject = LoginResponse(id: "\(profileId)", name: name, email: email, deviceToken: token)
-        self.onGoToHomeScreen?(name)
+        self.onGoToMainScreen?()
         //            }
         //        }
     }

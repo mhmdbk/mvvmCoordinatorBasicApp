@@ -22,5 +22,4 @@ struct UserManager {
     static var isLoggedIn: Bool {
         ApplicationStorage.currentUserObject != nil && ApplicationStorage.kDeviceToken != nil
     }
-
 }

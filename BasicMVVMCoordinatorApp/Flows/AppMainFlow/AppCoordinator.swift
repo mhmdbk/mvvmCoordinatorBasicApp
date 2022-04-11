@@ -33,7 +33,7 @@ final class AppCoordinator: BaseCoordinator {
      }
 
      override func start() {
-         isLoggedInUser ? runHomeFlow(ApplicationStorage.kUserName) : showMainModule()
+         isLoggedInUser ? runTabBarFlow() : showMainModule()
      }
 }
 
@@ -51,22 +51,24 @@ private extension AppCoordinator {
         let registerCoordinator = coordinatorFactory.makeRegisterCoordinator(router: router,
                                                                              dependencies: dependencyProvider,
                                                                              startingPoint: startPoint)
-//        registerCoordinator.finishFlow = { [weak self, weak registerCoordinator] startingPoint in
-//            guard let self = self else { return }
-//            self.removeChildCoordinator(registerCoordinator)
-//            if startingPoint == .login {
-//                return
-//            }
-//        }
+        registerCoordinator.finishFlow = { [weak self, weak registerCoordinator] startingPoint in
+            guard let self = self else { return }
+            self.removeChildCoordinator(registerCoordinator)
+            if startingPoint == .login {
+                return
+            }
+        }
         addChildCoordinator(registerCoordinator)
         registerCoordinator.start()
     }
 
-    func runHomeFlow(_ username: String) {
-              let homeCoordinator = coordinatorFactory.makeHomeCoordinator(router: router,
-                                                                           dependencies: dependencyProvider)
-              homeCoordinator.username = username
-              addChildCoordinator(homeCoordinator)
-              homeCoordinator.start()
-          }
+    func runTabBarFlow() {
+        let tabBarCoordinator = coordinatorFactory.makeTabBarCoordinator(router: router, dependencies: dependencyProvider)
+        tabBarCoordinator.finishFlow = { [weak self] in
+            guard let self = self else { return }
+            self.removeChildCoordinator(tabBarCoordinator)
+        }
+        addChildCoordinator(tabBarCoordinator)
+        tabBarCoordinator.start()
+    }
 }

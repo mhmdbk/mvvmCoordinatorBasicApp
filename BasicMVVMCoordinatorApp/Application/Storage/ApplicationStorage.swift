@@ -14,7 +14,7 @@ struct ApplicationStorage {
             For your custom types use `@ObjectStorage`, type must conform to `Codable`
             Do not add computed properties here, add them in their related files, for example: `isLoggedIn` should be in a User management file
      */
-    
+
     private init() {}
 
     private enum StorageKey: String {
