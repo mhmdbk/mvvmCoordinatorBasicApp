@@ -8,63 +8,8 @@
 import Foundation
 
 enum APIKeys: String {
-    case visibilityRights
-    case page
-    case size
-    case username
-    case password
-    case deviceType
-    case startTime
-    case endTime
-    case vf
-    case id
-    case vodAssetId
-    case channelIds
-    case tenantId
-    case f_description
-    case categoryId
-    case vodContentType
-    case searchString
-    case searchTitle = "f_title.title"
-    case searchTitleObject = "f_title.titleORtitle.titleBriefORtitle.summaryShortORtitle.summaryLong"
-    case searchMetadata
-    case type
-    case contentType = "f_metadata.contentType"
-    case sort
-    case categoryIds
-    case parentId
-    case f_parents_id = "f_parents.id"
-    case callback
-    case appVersion
-    case platform
-    case brand
-    case firebaseToken
-    case model
-    case name
-    case platformVersion
-    case serialNumber
-    case uuid
-    case loginType
-    case f_type
-    case f_name
     case theme
-    case userSettings
-    case categoriesEnabled
-    case eventType, position, videoId, deviceUuid, videoType, vodType
-    case f_title
-    case searchText
-    case f_cast_title = "f_cast.title"
-    case f_genre_title = "f_genres.title"
-    case f_original_languages_title = "f_originalLanguages.title"
-    case f_userData
-    case detailed
-    case drmToken = "DrmToken"
-    case getSummaryShort
-    case productId
-    case receipt
-    case mdwDeviceUuid = "X-Mdw-Device-Uuid"
-    case mdwCustomerId = "X-Mdw-Customer-Id"
-    case mdwAppVersion = "app-version"
+    case offset
 }
 
 extension Dictionary where Key == String {

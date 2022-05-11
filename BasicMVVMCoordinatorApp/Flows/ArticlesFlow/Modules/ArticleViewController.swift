@@ -14,6 +14,7 @@ class ArticleViewController: UIViewController, StoryboardLoadable, Presentable {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
+        fetchPokemons(limit: 20, offset: 20)
     }
 
     override func viewDidLayoutSubviews() {
@@ -30,5 +31,10 @@ extension ArticleViewController {
                                   image: UIImage(named: "tabbar_article_icon"),
                                   selectedImage: tabBarImage?.withRenderingMode(
                                     .alwaysOriginal) ?? tabBarImage)
+    }
+    private func fetchPokemons(limit: Int, offset: Int) {
+        viewModel.fetchPokemons(offset: offset, limit: limit) {
+            print(self.viewModel.pokemons)
+        }
     }
 }

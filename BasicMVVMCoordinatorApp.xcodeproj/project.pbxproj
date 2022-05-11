@@ -42,6 +42,10 @@
 		F6082DB72802EC0F00F7C737 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6082DB62802EC0F00F7C737 /* LoginResponse.swift */; };
 		F63E35512822C093007F4F25 /* UIDevice+ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E35502822C093007F4F25 /* UIDevice+ModelName.swift */; };
 		F63E35532822C129007F4F25 /* Bundle+AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E35522822C129007F4F25 /* Bundle+AppVersion.swift */; };
+		F63E35572822D207007F4F25 /* PokemonFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E35552822D207007F4F25 /* PokemonFetchRequest.swift */; };
+		F63E35582822D207007F4F25 /* PokemonAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E35562822D207007F4F25 /* PokemonAPIClient.swift */; };
+		F63E355B2822D28B007F4F25 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E355A2822D28B007F4F25 /* Results.swift */; };
+		F63E355D2822D2AF007F4F25 /* Pokemons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E355C2822D2AF007F4F25 /* Pokemons.swift */; };
 		F6C0F4CA27E63C08002D84E9 /* FacebookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4C927E63C08002D84E9 /* FacebookService.swift */; };
 		F6C0F4CF27E63C39002D84E9 /* GoogleSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4CE27E63C39002D84E9 /* GoogleSignInService.swift */; };
 		F6C0F4D127E63C69002D84E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0F4D027E63C69002D84E9 /* Constants.swift */; };
@@ -185,6 +189,10 @@
 		F6082DB62802EC0F00F7C737 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		F63E35502822C093007F4F25 /* UIDevice+ModelName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+ModelName.swift"; sourceTree = "<group>"; };
 		F63E35522822C129007F4F25 /* Bundle+AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+AppVersion.swift"; sourceTree = "<group>"; };
+		F63E35552822D207007F4F25 /* PokemonFetchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonFetchRequest.swift; sourceTree = "<group>"; };
+		F63E35562822D207007F4F25 /* PokemonAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonAPIClient.swift; sourceTree = "<group>"; };
+		F63E355A2822D28B007F4F25 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		F63E355C2822D2AF007F4F25 /* Pokemons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemons.swift; sourceTree = "<group>"; };
 		F6C0F4C927E63C08002D84E9 /* FacebookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookService.swift; sourceTree = "<group>"; };
 		F6C0F4CE27E63C39002D84E9 /* GoogleSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInService.swift; sourceTree = "<group>"; };
 		F6C0F4D027E63C69002D84E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -543,6 +551,24 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		F63E35542822D207007F4F25 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F63E35552822D207007F4F25 /* PokemonFetchRequest.swift */,
+				F63E35562822D207007F4F25 /* PokemonAPIClient.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		F63E35592822D224007F4F25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F63E355A2822D28B007F4F25 /* Results.swift */,
+				F63E355C2822D2AF007F4F25 /* Pokemons.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F6C0F4CB27E63C10002D84E9 /* FacebookService */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,6 +694,8 @@
 		F6F1C40C2804667F00A7B5AC /* ArticlesFlow */ = {
 			isa = PBXGroup;
 			children = (
+				F63E35592822D224007F4F25 /* Models */,
+				F63E35542822D207007F4F25 /* Request */,
 				F6F1C42E280473E600A7B5AC /* CoordinatorFactory */,
 				F6F1C42D280473DF00A7B5AC /* ModuleFactory */,
 				F6F1C42C280473D800A7B5AC /* Modules */,
@@ -1117,6 +1145,7 @@
 				F6F1C3FD280440FE00A7B5AC /* TabBarCoordinatorFactory.swift in Sources */,
 				F6F4A28F28155D9F00D603C9 /* DRMTokenParser.swift in Sources */,
 				F6F3BF6227D622F800ED06B9 /* LoginViewController.swift in Sources */,
+				F63E355D2822D2AF007F4F25 /* Pokemons.swift in Sources */,
 				F602BF5027D4C1E000DCEF1B /* MainViewModel.swift in Sources */,
 				F6F4A27D28155AB700D603C9 /* HTTPMethod.swift in Sources */,
 				F6F1C41F2804704900A7B5AC /* ProfileModuleFactory.swift in Sources */,
@@ -1131,6 +1160,7 @@
 				F6F1C43A280474FF00A7B5AC /* ArticleCoordinatorFactory.swift in Sources */,
 				F6F3BF6B27D63CF300ED06B9 /* CustomNavigationController.swift in Sources */,
 				F602BF3127D4BFA100DCEF1B /* AppCoordinator.swift in Sources */,
+				F63E35572822D207007F4F25 /* PokemonFetchRequest.swift in Sources */,
 				F6F3BF4F27D6223600ED06B9 /* RegisterModuleFactory.swift in Sources */,
 				F6F1C4362804748A00A7B5AC /* ArticleModuleFactory.swift in Sources */,
 				F6D8611D27E5D55400B30F25 /* HomeViewController.swift in Sources */,
@@ -1157,6 +1187,7 @@
 				F6F1C430280473F900A7B5AC /* ArticleViewModel.swift in Sources */,
 				F602BF5527D4C33400DCEF1B /* NetworkService.swift in Sources */,
 				F6F1C3FF2804410200A7B5AC /* TabBarCoordinatorFactoryType.swift in Sources */,
+				F63E355B2822D28B007F4F25 /* Results.swift in Sources */,
 				F6082DB52802EBFC00F7C737 /* ObjectStorage.swift in Sources */,
 				F6F1C4252804705C00A7B5AC /* ProfileViewController.swift in Sources */,
 				F6F3BF5327D6223F00ED06B9 /* RegisterCoordinator.swift in Sources */,
@@ -1194,6 +1225,7 @@
 				F6C0F4CF27E63C39002D84E9 /* GoogleSignInService.swift in Sources */,
 				F6F1C4212804704C00A7B5AC /* ProfileModuleFactoryType.swift in Sources */,
 				F6F4A27C28155AB700D603C9 /* RequestParams.swift in Sources */,
+				F63E35582822D207007F4F25 /* PokemonAPIClient.swift in Sources */,
 				F6F3BF5427D6223F00ED06B9 /* RegisterCoordinatorOutput.swift in Sources */,
 				F6F1C41B2804703700A7B5AC /* ProfileCoordinatorFactory.swift in Sources */,
 				F6D8611227E5D2E300B30F25 /* HomeCoordinatorOutput.swift in Sources */,

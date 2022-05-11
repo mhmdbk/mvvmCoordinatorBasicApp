@@ -49,8 +49,8 @@ func printD(_ items: Any...) {
 
 // Please when you change this, change it also inside VideoPlayer+FRM.swift
 enum Endpoint {
-    static let staging = "https://weiss-digicel-uat.azdio-tv.com"
-    static let prod = "https://weiss.sportsmax.digicelgroup.com"
+    static let staging = "https://pokeapi.co/api/v2/"
+    static let prod = "https://pokeapi.co/api/v2/"
     // ----> Please when you change this, change it also inside VideoPlayer+DRM.swift <-----
     static let main = prod
     // ----> Please when you change this, change it also inside VideoPlayer+DRM.swift <-----
