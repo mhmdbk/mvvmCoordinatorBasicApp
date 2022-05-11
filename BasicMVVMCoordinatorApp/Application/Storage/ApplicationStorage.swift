@@ -21,7 +21,9 @@ struct ApplicationStorage {
         case kUser
         case kDeviceToken
         case kUserName
-
+        case kExpectedDRMTokenExpiry
+        case kDRMToken
+        case kTenantId
     }
 
     /// Current logged in user object
@@ -45,4 +47,15 @@ struct ApplicationStorage {
 
     @SimpleStorage(key: StorageKey.kUserName.rawValue, defaultValue: "")
     static var kUserName: String!
+
+    @SimpleStorage(key: StorageKey.kExpectedDRMTokenExpiry.rawValue, defaultValue: 0)
+    static var kExpectedDRMTokenExpiry: Int!
+
+    @SimpleStorage(key: StorageKey.kDRMToken.rawValue, defaultValue: "")
+    static var kDRMToken: String!
+
+    @SimpleStorage(key: StorageKey.kTenantId.rawValue, defaultValue: 1)
+    static var tenantId: Int!
+    
+
 }
